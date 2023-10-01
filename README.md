@@ -85,7 +85,7 @@ The server will be running at http://localhost:5000 by default.
 
 -   Example response
 
-        ```bash
+       
         {
             "success": true,
             "message": "Blogs fetched successfully",
@@ -108,9 +108,6 @@ The server will be running at http://localhost:5000 by default.
 
         }
 
-    ```
-
-    ```
 
 ## API Documentation
 
