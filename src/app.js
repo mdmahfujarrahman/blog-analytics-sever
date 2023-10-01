@@ -13,7 +13,14 @@ app.use(express.urlencoded({ extended: true }));
  * @description Attach API routes to the Express app.
  * @param {object} routes - An object containing the API routes.
  */
+
 app.use("/api", routes);
+app.use("/", (req, res, next) => {
+    res.status(200).json({
+        success: true,
+        message: "Welcome to Blog Analytics Application",
+    });
+});
 
 /**
  * @description Global error handler middleware.

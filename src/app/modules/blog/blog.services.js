@@ -48,7 +48,10 @@ const searchBlogs = async (query) => {
     const searchResults = _.filter(blogs, (blog) =>
         blog.title.toLowerCase()?.includes(query.toLowerCase())
     );
-    return searchResults;
+    return {
+        total: searchResults.length,
+        data: searchResults,
+    };
 };
 
 export const BlogsService = {
